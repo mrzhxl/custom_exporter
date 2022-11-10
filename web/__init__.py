@@ -6,7 +6,7 @@ from flask_apscheduler import APScheduler
 
 
 """
-1、定时任务，部署服务器每20秒ping 114.114.114.114,丢包（server_netping_loss）和延迟（server_netping_sec）写入redis。
+1、定时任务，部署服务器每10秒ping 114.114.114.114,丢包（server_netping_loss）和延迟（server_netping_sec）写入redis。
 2、POST /netping_data，被动接收传入丢包（office_netping_loss）和延迟（office_netping_sec）写入redis。
 3、GET /metrics，prometheus服务器拉取。
 """
